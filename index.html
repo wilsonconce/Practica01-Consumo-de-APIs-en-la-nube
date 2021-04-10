@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,65 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
-<body>
-    <h1>HOLA MUNDO</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui totam sit doloremque doloribus labore velit tempora ut aspernatur maiores, libero asperiores recusandae esse voluptatum ratione dolore? Esse maiores quae minima.
-    </p>
-    <button class="btn btn-primary">Boton</button>
 
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                The Cocktails
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <section class="main row">
+            <div class="col-md-3">
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-success">Buscar</button>
+            </div>
+        </section>
+        <section class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h4></h4>
+        </div>
+    </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
