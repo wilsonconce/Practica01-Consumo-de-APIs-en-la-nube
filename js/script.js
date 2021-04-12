@@ -1,6 +1,9 @@
 document.querySelector('#buscar').addEventListener('click', function () {
     obtenerDatos();
 });
+document.querySelector('#limpiar').addEventListener('click', function () {
+    limpiar();
+});
 function obtenerDatos() {
     var cadena = document.getElementById("cadena").value;
     let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + cadena;
@@ -26,4 +29,14 @@ function obtenerDatos() {
             document.getElementById("tablaDetalles").innerHTML = detalles;
         }
     }
+}
+
+function limpiar() {
+    var detalles = "";
+    document.getElementById("cadena").value="";
+    for (var i = 0; i < dato.length; i++) {
+        detalles += "<tr>" 
+         "</tr>";
+    }
+    document.getElementById("tablaDetalles").innerHTML = detalles;
 }
